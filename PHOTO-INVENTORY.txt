@@ -1,0 +1,48 @@
+ALIA SITE — PHOTO INVENTORY (Rev 6)
+Semua file asli tetap utuh di assets/images/ (tidak dihapus, tidak diubah). Versi web (EXIF sudah diterapkan, sisi terpanjang ~1400 px, tanpa filter) ada di assets/images/web/.
+
+ZIP tambahan (mediatambahan2) — hasil pemeriksaan:
+  1000000535.jpg  DUPLIKAT PERSIS (hash sama) dengan foto lama 1000000535.jpg   -> dilewati
+  1000000545.jpg  DUPLIKAT PERSIS dengan foto12.jpg                              -> dilewati
+  1000000478.jpg  mirip-duplikat (kompresi/ukuran beda) dengan foto lama         -> dilewati, versi kualitas terbaik tetap dipakai
+  1000000483.jpg  mirip-duplikat dengan foto14.jpg                               -> dilewati
+  1000000556.jpg  foto unik, tapi orientasi isinya terbalik/tidak wajar          -> disimpan, TIDAK dipakai di buku (tidak diputar paksa)
+  IMG-20261029-WA0035/0046/0056/0061.jpg  foto baru, unik                        -> dipakai di buku
+  SnapTik...7690430973321710866.mp3       musik tambahan                         -> disimpan di assets/audio/, belum dipasang di pemilih musik
+
+Duplikat lama yang ditangani: foto3 = IMG-20261029-WA0034 (sama) -> dipakai 1x; foto9 = 1000000549 (sama) -> dipakai 1x; foto10 mirip 1000000531 -> dipakai versi 531 (lebih tajam).
+
+Foto di buku Little Frames (23 foto, masing-masing 1x; foto13 "ga bisa diem" DIHAPUS dari halaman 6 pada Rev 7): 20261028_225551, 1000000470, 1000000476, 1000000526, 1000000527, 1000000549, IMG-WA0035, IMG-WA0046, foto12, foto8, foto4, IMG-WA0056, IMG-WA0061, 1000000531, 1000000536, foto11, foto5, foto6, foto2, foto7, IMG-WA0034, 1000000477, foto1
+Dipakai di bagian lain: fotoutama (hero), foto14 (galeri/portret), foto15 & foto16 (cutout), 1.png/2.png/3.png (photo strips).
+
+
+Rev 7: audio khusus (voice note) = assets/audio/voice-note.m4a (AAC asli) + voice-note.mp3 (fallback); file asli di assets/audio/original/. Aset pohon/bunga: assets/img/ (ilustrasi orisinal, dibuat prosedural).
+
+=== Rev 9 (newimage.zip) ===
+Dipakai di buku (halaman 12-13), tanpa filter/warna diubah, EXIF dibetulkan:
+- IMG-20261024-WA0123 -> new_out1 (crop ringan 3:4, ~7-10% tepi)
+- IMG-20261024-WA0127 -> new_out2 (crop ringan 3:4, ~5%)
+- IMG-20261024-WA0130 -> new_out3 (crop ringan 3:4, ~5%)
+- DSCF7901 (EXIF orientation 8, diputar ke portrait) -> new_pot1 (resize 1100x1650)
+- DSCF7903 -> new_pot2 (resize 1600x1067)
+Tidak dipakai (near-duplicate dari WA0127, lebih tidak tajam): IMG-20261024-WA0129. File asli tetap di folder sumber.
+Kalender: assets/calendar/calendar.png = screenshot terbaru dari newimage.zip (27 Nov ditandai).
+Musik 3: assets/audio/audio3.m4a (AAC asli) + audio3.mp3 (fallback); asli di assets/audio/original/music3-original.mp3. audio2 juga punya audio2.m4a (aslinya AAC berekstensi .mp3).
+
+=== Rev 10 (fotobirt.zip + fotobirth2.zip) -> section "More little moments" (menu Memories), BUKAN di buku ===
+- DSCF8051 -> assets/images/web/more1.jpg (1800x1200, tanpa crop)
+- DSCF8070 (EXIF 8 -> portrait) -> more2.jpg (1200x1800, tanpa crop)
+- DSCF8180 -> more3.jpg (1800x1200, tanpa crop)
+Tidak dipakai: DSCF7902 (near-duplicate DSCF7901 yang sudah ada di buku, pose & lokasi sama). File asli tidak dihapus.
+Catatan: strip bawaan assets/images/web/1.png memuat teks "Sat, 28 November 11.28" di dalam gambar (desain strip kamu sendiri) - tidak diubah.
+
+== Revisi 11 ==
+Polaroid wall (section "More little moments", tanpa teks di dalam frame, tidak ada di buku):
+ pol1.jpg  <- 20261024_091734.jpg
+ pol2.jpg  <- 20261024_093924.jpg
+ pol3.jpg  <- DSCF1047.JPG
+ pol4.jpg  <- IMG_8270.HEIC (dikonversi ke JPG 3024x4032 via decoder HEVC kustom, EXIF/ICC dipertahankan; file HEIC asli tidak dihapus)
+ pol5.jpg  <- DSCF7880.JPG (EXIF orientasi 8 sudah dikoreksi)
+ pol6.jpg  <- DSCF8074.JPG (EXIF orientasi 8 sudah dikoreksi)
+Web copies: sisi panjang 1800px, JPG q88, warna asli, tanpa filter/crop. Tidak ada duplikat dengan foto lama.
+Dihapus: assets/audio/audio1.mp3 (Blush).
